@@ -11,11 +11,6 @@ class SeleniumObjetc:
         return self.webdriver.find_elements_by(*locator)
 
 
-class Browser:
-    def __init__(self):
-        ...
-
-
 class Page(ABC, SeleniumObjetc):
     def __init__(self, webdriver: WebDriver, url=""):
         self.webdriver = webdriver
